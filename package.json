@@ -73,6 +73,7 @@
     "support-for": "^1.0.4"
   },
   "dependencies": {
+    "basscss-sass": "^4.0.0",
     "metalsmith-uglify": "^1.2.1",
     "spinkit": "^1.2.5"
   }
