@@ -998,3 +998,27 @@ if (!Array.prototype.find) {
 
     lib$es6$promise$polyfill$$default();
 }).call(this);
+
+
+/****************
+  Fade slider
+****************/
+
+$(function() {
+
+  var triggers = $('[data-show]')
+
+  triggers.on('click', function (e) {
+    e.preventDefault()
+    var showWithClass = $(this).attr('data-show')
+
+    // toggle pagination
+    $(this).addClass('visible')
+    $(this).siblings().removeClass('visible')
+
+    // toggle slide
+    $(showWithClass).siblings().removeClass('visible')
+    $(showWithClass).addClass('visible')
+  })
+
+})
