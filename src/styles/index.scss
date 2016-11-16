@@ -74,3 +74,13 @@
   max-width: 1024px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 40rem) {
+  .xs-col-12{
+    width: 100%;
+  }
+
+  .xs-center{
+    text-align: center;
+  }
+}
