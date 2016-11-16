@@ -40,6 +40,15 @@
 @import './_pills.scss';
 @import './carousel.scss';
 
+// Wallop slider
+@import './wallop/wallop';
+@import './wallop/wallop--fade';
+@import './wallop/wallop--fold';
+@import './wallop/wallop--rotate';
+@import './wallop/wallop--scale';
+@import './wallop/wallop--slide';
+@import './wallop/wallop--vertical-slide';
+
 .bg-gray{
   background-color: $snow;
 }

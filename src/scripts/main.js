@@ -1,3 +1,19 @@
+require('./blog.js')
+require('./case-study-carousel.js')
+require('./docs.js')
+require('./events-carousel.js')
+require('./fetch.js')
+require('./get-started.js')
+require('./install.js')
+require('./modal.js')
+require('./overlay.js')
+require('./quotes-carousel.js')
+require('./smooth-scroll.js')
+require('./stackdiagram.js')
+require('./typer.js')
+
+import Wallop from 'wallop';
+
 // Mobile menu
 $('#nav-icon').on('click', function (e) {
   e.preventDefault();
@@ -1001,24 +1017,26 @@ if (!Array.prototype.find) {
 
 
 /****************
-  Fade slider
+  Slider
 ****************/
+var wallopEl = document.querySelector('.Wallop');
+var slider = new Wallop(wallopEl);
 
-$(function() {
+// $(function() {
 
-  var triggers = $('[data-show]')
+//   var triggers = $('[data-show]')
 
-  triggers.on('click', function (e) {
-    e.preventDefault()
-    var showWithClass = $(this).attr('data-show')
+//   triggers.on('click', function (e) {
+//     e.preventDefault()
+//     var showWithClass = $(this).attr('data-show')
 
-    // toggle pagination
-    $(this).addClass('visible')
-    $(this).siblings().removeClass('visible')
+//     // toggle pagination
+//     $(this).addClass('visible')
+//     $(this).siblings().removeClass('visible')
 
-    // toggle slide
-    $(showWithClass).siblings().removeClass('visible')
-    $(showWithClass).addClass('visible')
-  })
+//     // toggle slide
+//     $(showWithClass).siblings().removeClass('visible')
+//     $(showWithClass).addClass('visible')
+//   })
 
-})
+// })
