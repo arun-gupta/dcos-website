@@ -38,11 +38,21 @@
 @import './pages/demos';
 @import './_dropdown.scss';
 @import './_pills.scss';
+@import './carousel.scss';
 
 // Basscss add-ons
 @import '../../node_modules/basscss-sass/scss/responsive-padding';
 @import '../../node_modules/basscss-sass/scss/responsive-margin';
 @import './basscss-addons/responsive-layout';
+
+// Wallop slider
+@import './wallop/wallop';
+@import './wallop/wallop--fade';
+@import './wallop/wallop--fold';
+@import './wallop/wallop--rotate';
+@import './wallop/wallop--scale';
+@import './wallop/wallop--slide';
+@import './wallop/wallop--vertical-slide';
 
 .bg-gray {
   background-color: $snow;
